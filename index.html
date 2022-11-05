@@ -2,42 +2,53 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>		
 	</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-widths">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header__content">
 				<div class="header__bar">
-					<div class="header__menu">
-						<img class="header__logo" src="./logo/logo.png" alt="logo">
-						<h2 class="header__subtitle"><a class="header__link" href="#">Rhythm</a></h2>
-						<a class="header__link" href="#">Store</a>
-						<a class="header__link" href="#">Collections</a>
-						<a class="header__link header__link_max" href="#">Support</a>
-					</div>	
-					<div class="header__img">
-						<img class="header_picture" src="./display1/header_img.jpg" alt="header_img">
-						<div class="header__img_logo">
-							<img class="header__logo_bottom" src="./logo/logo.png" alt="logo">
-						</div>						
-					</div>
-				</div>				
-				<div class="header__info">
-					<div class="header__context">
-						<h1 class="header__title">Browse top quality <span class="header__title_orange">Guitars</span> online</h1>
-						<p class="header__text">Explore 50k+ latest collections of branded guitars online with Rhythm.</p>
-						<div class="heder__app">
-							<button class="header__btn">Get the App</button>
-							<img class="header__google_btn" src="./display1/google_store.png" alt="google_store">
-							<img class="header__app_btn" src="./display1/apple_store.png" alt="apple_store">
+					<div class="header__menu_left">
+						<div class="header__menu">
+							<a class="header__logo_link" href="#">
+								<img class="header__logo" src="./logo/logo.png" alt="logo">
+								<h2 class="header__subtitle">Rhythm</h2>
+							</a>
+							<div class="header__links">
+								<a class="header__link" href="#">Store</a>
+								<a class="header__link" href="#">Collections</a>
+								<a class="header__link " href="#">Support</a>
+							</div>
+						</div>
+						<div class="header__info">
+							<div class="header__context">
+								<h1 class="header__title">Browse top quality <span class="header__title_orange">Guitars</span> online</h1>
+								<p class="header__text">Explore 50k+ latest collections of branded guitars online with Rhythm.</p>
+								<div class="heder__app">
+									<button class="header__btn">Get the App</button>
+									<a class="header__btn_lin" href="#">
+										<img class="header__google_btn" src="./display1/google_store.png" alt="google_store">
+									</a>
+									<a class="header__btn_lin" href="#">
+										<img class="header__app_btn" src="./display1/apple_store.png" alt="apple_store">
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+					<div class="header__menu_right">
+						<div class="header__img">
+							<img class="header_picture" src="./display1/header_img.jpg" alt="header_img">
+							<div class="header__img_logo">
+								<img class="header__logo_bottom" src="./logo/logo.png" alt="logo">
+							</div>						
+						</div>
+					</div>		
+				</div>				
 			</div>
 		</div>		
 	</header>
@@ -98,20 +109,20 @@
 				<h2 class="store__title kind__title_marg">Choose based on <span class="header__title_orange">Categories</span></h2>
 				<div class="kind__cards">
 					<a class="kind__card" href="#">
-						<h4 class="kind__name kind__name_left">Acoustic</h4>
 						<img class="kind__img" src="./display3/acoustic.jpg" alt="Acoustic">
+						<h4 class="kind__name">Acoustic</h4>
 					</a>
 					<a class="kind__card" href="#">
-						<h4 class="kind__name kind__name_73">Electric</h4>
 						<img class="kind__img" src="./display3/electric.jpg" alt="Electric">
+						<h4 class="kind__name">Electric</h4>
 					</a>
 					<a class="kind__card" href="#">
-						<h4 class="kind__name kind__name_73">Basses</h4>
 						<img class="kind__img" src="./display3/basses.jpg" alt="basses">
+						<h4 class="kind__name">Basses</h4>
 					</a>
 					<a class="kind__card" href="#">
-						<h4 class="kind__name kind__name_53">Collections</h4>
 						<img class="kind__img" src="./display3/collections.jpg" alt="collections">
+						<h4 class="kind__name">Collections</h4>
 					</a>
 				</div>
 			</div>
@@ -122,14 +133,30 @@
 			<div class="brends__content">
 				<h2 class="store__title brends__title">Featuring the <span class="header__title_orange">Best Brands</span></h2>
 				<div class="brends__logos">
-					<img class="brends__logo" src="./display4/ibanez.png" alt="ibanez">
-					<img class="brends__logo" src="./display4/martin.png" alt="martin">
-					<img class="brends__logo" src="./display4/fender.png" alt="fender">
-					<img class="brends__logo brends__logo_marg" src="./display4/gibson.png" alt="gibson">
-					<img class="brends__logo" src="./display4/taylor.png" alt="taylor">
-					<img class="brends__logo" src="./display4/gretsch.png" alt="gretsch">
-					<img class="brends__logo" src="./display4/takamine.png" alt="takamine">
-					<img class="brends__logo brends__logo_marg" src="./display4/seagull.png" alt="seagull">
+					<div class="brends__logo">
+						<img class="brends__ibanez" src="./display4/ibanez.png" alt="ibanez">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__martin" src="./display4/martin.png" alt="martin">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__fender" src="./display4/fender.png" alt="fender">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__gibson brends__logo_marg" src="./display4/gibson.png" alt="gibson">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__taylor" src="./display4/taylor.png" alt="taylor">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__gretsch" src="./display4/gretsch.png" alt="gretsch">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__takamine" src="./display4/takamine.png" alt="takamine">
+					</div>
+					<div class="brends__logo">
+						<img class="brends__seagull brends__logo_marg" src="./display4/seagull.png" alt="seagull">
+					</div>
 				</div>
 			</div>
 		</div>		
@@ -193,8 +220,8 @@
 				<div class="browse__offer">
 					<h2 class="browse__title">Browse and buy your <span class="header__title_orange">favorite guitars</span> with Rhythm.</h2>
 					<div class="browse__btn">
-						<button class="browse__google"></button>
-						<button class="browse__app"></button>
+						<button class="browse__google hov"></button>
+						<button class="browse__app hov"></button>
 					</div>
 				</div>
 				<img class="browse__application" src="./display7/app_img.png" alt="application">
@@ -236,9 +263,9 @@
 					<div class="footer__follow">
 						<a class="footer__page" href="#">Follow us</a>
 						<div class="footer__btns">
-							<a class="footer__facebook" href="#"><img class="footer__facebook_logo" src="./display8/facebook.png" alt="facebook"></a>
-							<a class="footer__twitter" href="#"><img class="footer__twitter_logo" src="./display8/twitter.png" alt="twitter"></a>
-							<a class="footer__instagram" href="#"><img class="footer__instagram_logo" src="./display8/instagram.png" alt="instagram"></a>
+							<a class="footer__facebook hov" href="#"><img class="footer__facebook_logo" src="./display8/facebook.png" alt="facebook"></a>
+							<a class="footer__twitter hov" href="#"><img class="footer__twitter_logo" src="./display8/twitter.png" alt="twitter"></a>
+							<a class="footer__instagram hov" href="#"><img class="footer__instagram_logo" src="./display8/instagram.png" alt="instagram"></a>
 						</div>
 					</div>
 				</div>
