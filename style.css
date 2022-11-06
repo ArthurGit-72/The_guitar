@@ -31,6 +31,8 @@ a:hover {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
+
 }
 
 .header__content {
@@ -77,7 +79,6 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 	margin-right: 81px;
 	margin-left: auto;
 }
@@ -185,7 +186,6 @@ a:hover {
 	font-family: 'Cal Sans';
 	font-weight: 600;
 	font-size: 44px;
-	line-max-height: 53px;
 	margin-bottom: 92px;
 }
 
@@ -405,7 +405,6 @@ a:hover {
 
 .review__letter {
 	font-family: 'Poppins';
-	line-max-height: 160%;
 	font-weight: 400;
 	font-size: 24px;
 
@@ -415,7 +414,6 @@ a:hover {
 
 .review__name {
 	font-family: 'Poppins';
-	line-max-height: 160%;
 	font-weight: 600;
 	font-size: 24px;
 
@@ -430,7 +428,6 @@ a:hover {
 
 .review__status {
 	font-family: 'Poppins';
-	line-max-height: 160%;
 	font-weight: 500;
 	font-size: 18px;
 
@@ -602,7 +599,7 @@ a:hover {
 }
 
 .footer__end {
-	padding-left: 400px;
+	text-align: center;
 }
 
 
@@ -624,8 +621,63 @@ a:hover {
 
 /* 1024px, 768px, 420px */
 
+/* TABLET */
 
 @media screen and (max-width: 1024px) {
+	.container {
+		margin: 0px 30px;
+		position: 0px;
+	}
+
+	.browse__title {
+		font-size: 32px;
+	}
+
+	.header {
+    margin-bottom: 132px;
+	}
+
+	.header__logo_link {
+		margin-right: 15px;
+	}
+
+	.header__links {
+		z-index: 1;
+		background-color: white;
+		border-radius: 10px;
+	}
+
+	.header__link:last-child {
+		margin-right: 10px;
+	}
+
+	.store__products {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.store__img {
+		margin-bottom: 0px;
+	}
+
+	.kind {
+    margin-bottom: 50px;
+	}
+
+	.kind__title_marg  {
+		margin-bottom: 30px;
+	}
+
+	.kind__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+	}
+
+	.brends {
+    margin-bottom: 0px;
+	}
+
 	.rhythm {
 		padding-top: 50px;
 		padding-bottom: 20px;
@@ -646,15 +698,86 @@ a:hover {
 	.browse__application {
 		width: 100%;
 	}
-}
 
+	.review {
+		padding-top: 50px;
+		padding-bottom: 80px;
+	}
 
-@media screen and (max-width: 768px) {
-	.browse__title {
-		font-size: 32px;
+	.review__title {
+    margin-bottom: 50px;
+	}
+
+	.review__img {
+    width: 50%;
+    height: 50%;
+    margin-right: 20px;
+	}
+
+	.review__letter {
+		font-size: 18px;
+		margin-bottom: 50px;
+	}
+
+	.review__name {
+		font-size: 20px;
+	}
+
+	.review__status {
+		font-size: 14px;
+	}
+
+	.browse__content {
+		flex-direction: row;
+	}
+
+	.browse__application {
+		width: 50%;
+    height: 50%;
+    margin-top: 0px;
+	}
+
+	.footer {
+		padding: 20px 0;
+	}
+
+	.footer__info {
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.footer__contact {
+		margin-right: 25px;
+	}
+
+	.footer__pages {
+		margin-right: 40px;
+	}
+
+	.footer__facebook {
+    margin-right: 20px;
+	}
+
+	.footer__twitter {
+    margin-right: 20px;
+	}
+
+	.footer__text {
+		font-size: 15px;
+		margin-bottom: 8px;
 	}
 }
 
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+	
+}
+
+
+
+/* MOBILE - mini */
 
 @media screen and (max-width: 420px) {
 	.rhythm__title {
