@@ -25,6 +25,10 @@ a {
 }
 
 a:hover {
+	text-shadow: white 0 0 10px;
+}
+
+.orange:hover {
 	text-shadow: #FF6428 0 0 10px;
 }
 
@@ -103,6 +107,7 @@ a:hover {
 }
 
 .header__btn {
+	cursor: pointer;
 	padding: 18px 48px;
 	font-family: 'Poppins';
 	font-weight: 600;
@@ -123,7 +128,6 @@ a:hover {
 
 .header__btn:hover {
 	box-shadow: 0 0 10px 0 #FF6428 inset, 0 0 10px 4px #FF6428;
-
 	transition: 0.03s;
 }
 
@@ -468,8 +472,30 @@ a:hover {
 	background: url(./display7/app_store.jpg)
 }
 
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
 .hov:hover {
 	box-shadow: 0 0 10px 0 #FF6428 inset, 0 0 10px 4px #FF6428;
+}
+
+
+.hov_jump:hover {
+	animation: bounce 1s;
 }
 
 .browse__application {
@@ -604,6 +630,14 @@ a:hover {
     margin-bottom: 132px;
 	}
 
+	.header__menu_left {
+		width: 100%
+	}
+
+	.header__img {
+		display: none;
+	}
+
 	.header__logo_link {
 		margin-right: 15px;
 	}
@@ -736,6 +770,24 @@ a:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MOBILE */
 
 @media screen and (max-width: 768px) {
@@ -748,8 +800,8 @@ a:hover {
 		padding: 15px 0 15px 15px;
 		flex-direction: column;
 		justify-content: center; 
-   		align-items: flex-start;
-		margin-bottom: 200px;
+		align-items: flex-start;
+		margin-bottom: 20px;
 	}
 
 	.header__img_logo {
@@ -775,11 +827,11 @@ a:hover {
 
 
 	.header__title {
+		text-align: center;
 		font-size: 30px;
 		margin-bottom: 30px;
 		background-color: white;
 		border-radius: 50%;
-		max-width: 330px;
 	}
 
 	.header_picture {
@@ -810,8 +862,9 @@ a:hover {
 	}
 
 	.header__text {
-		max-width: 225px;
-		margin-bottom: 70px;
+		text-align: center;
+		max-width: none;
+		margin-bottom: 50px;
 	}
 
 	.heder__app {
