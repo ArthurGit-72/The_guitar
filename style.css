@@ -777,6 +777,9 @@ a:hover {
 	.header__title {
 		font-size: 30px;
 		margin-bottom: 30px;
+		background-color: white;
+		border-radius: 50%;
+		max-width: 330px;
 	}
 
 	.header_picture {
@@ -784,12 +787,12 @@ a:hover {
 	}
 
 	.header__link:not(:last-child) {
-     margin-right: 0px;
-	 margin-bottom: 15px;
+		margin-right: 0px;
+		margin-bottom: 15px;
 	}
 
 	.header__link:last-child {
-    margin-right: 0px;
+    	margin-right: 0px;
 	}
 
 	.header__links {
@@ -807,7 +810,7 @@ a:hover {
 	}
 
 	.header__text {
-		max-width: 380px;
+		max-width: 225px;
 		margin-bottom: 70px;
 	}
 
