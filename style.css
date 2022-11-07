@@ -580,15 +580,14 @@ a:hover {
 
 .footer__btns {
 	display: flex;
+	justify-content: space-between;
 	margin-top: 12px;
 }
 
 .footer__facebook {
-	margin-right: 32px;
 }
 
 .footer__twitter {
-	margin-right: 32px;
 }
 
 .footer__end {
