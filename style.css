@@ -610,12 +610,13 @@ a:hover {
 .footer__links{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .footer__pages {
 	display: flex;
 	flex-direction: column;
-	margin-right: 126px;
+	margin-right: 110px;
 }
 
 .footer__page {
@@ -625,6 +626,11 @@ a:hover {
 	font-size: 18px;
 	text-transform: uppercase;
 	color: #121212;
+}
+
+.block__text_column {
+	display: flex;
+	flex-direction: column;
 }
 
 .footer__text {
@@ -638,8 +644,8 @@ a:hover {
 
 .footer__btns {
 	display: flex;
-	justify-content: space-between;
 	margin-top: 12px;
+	gap: 15px;
 }
 
 .footer__end {
@@ -679,6 +685,19 @@ a:hover {
 
 	.header {
     margin-bottom: 132px;
+	}
+
+
+	.header__bar {
+		margin-top: 150px;
+	}
+
+	.store {
+		margin-top: 120px;
+	}
+
+	.store__products_marg {
+		margin-bottom: 70px;
 	}
 
 	.header__menu_left {
@@ -796,6 +815,7 @@ a:hover {
 	.footer__info {
 		justify-content: space-between;
 		margin-bottom: 20px;
+		flex-direction: row;
 	}
 
 	.footer__contact {
@@ -804,6 +824,7 @@ a:hover {
 
 	.footer__pages {
 		margin-right: 40px;
+		
 	}
 
 	.footer__facebook {
@@ -821,6 +842,9 @@ a:hover {
 
 	.browse__btn {
 		justify-content: center;
+	}
+	.footer__btns {
+		gap: 0px;
 	}
 }
 
@@ -845,7 +869,7 @@ a:hover {
 
 /* MOBILE */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.container {
 		margin: 0px 15px;
 		padding: 0px;
@@ -931,10 +955,6 @@ a:hover {
 		margin-bottom: 70px;
 	}
 
-	.store__products {
-		justify-content: flex-start;
-	}
-
 	.store__products_marg {
 		margin-bottom: 100px;
 	}
@@ -962,12 +982,24 @@ a:hover {
 		height: 100%;
 	}
 
-	.footer__info {
-		flex-direction: column;
+	.footer__nav {
+		margin-right: 10px;
+	}
+
+	.footer__email_logo{
+		margin-right: 5px;
+
+	}
+
+	.footer__loc_logo {
+		margin-right: 5px;
 	}
 
 	.footer__contact {
 		margin-bottom: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
 	}
 
 	.footer__links {
@@ -988,14 +1020,59 @@ a:hover {
 		justify-content: center;
 		align-items: center;
 	}
-}
+	
+	.block__item {
+		margin: 0px 0px 20px 0px;
+	}
 
+	.block__title {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		position: relative;
+		padding: 0px 0px 0px 30px;
+		cursor: pointer;
+	}
+	
+	.block__title:before,
+	.block__title:after{
+		content: '';
+		width: 10px;
+		height: 1px;
+		background-color: #000;
+		position: absolute;
+		top: 8px;
+		transition: all 0.3s ease 0s;
+	}
+	
+	.block__title:before{
+		transform: rotate(40deg);
+		left: 0;
+	}
+	
+	.block__title:after{
+		transform: rotate(-40deg);
+		left: 8px;
+	}
+	
+	.block__title.active:before,
+	.block__title.active:after{
+		background-color: red;
+	}
+	
+	.block__title.active:before{
+		transform: rotate(-40deg);
+	}
+	
+	.block__title.active:after{
+		transform: rotate(40deg);
+	}
 
+	.block__text {
+		/* display: none; */
+		padding: 10px 0px 0px 0px;
+	}
 
-
-
-@media (max-width:767px){
-    body.lock{
+	body.lock{
         overflow: hidden;
     }
     .header__body{
@@ -1087,14 +1164,72 @@ a:hover {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}	
+	}
+	
+	.footer__info {
+		flex-direction: column;
+	}
+
+	.footer__pages {
+		display: flex;
+	}
+
+	.footer__links {
+		display: flex;
+	}
+	.footer__pages .block__text {
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.3s;
+	}
+
+	.footer__pages_active .block__text{
+		max-height: 85px;
+
+	}
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 621px) {
+	.footer__contact {
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+
+
+
+
 
 
 
 /* MOBILE - mini */
 
 @media screen and (max-width: 420px) {
+
+	.header__bar {
+		margin-top: 101px;
+	}
+
+	.store {
+		margin-top: 100px;
+	}
+
+	.header__btn {
+		margin-right: 10px;
+	}
+
+	.header__google_btn {
+		margin-right: 20px;
+	}
 
 	.rhythm__title {
 		font-size: 34px;
@@ -1118,9 +1253,8 @@ a:hover {
 	}
 
 	.browse__btn {
-		flex-wrap: wrap;
-		
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	
 	.browse__google {
@@ -1130,6 +1264,8 @@ a:hover {
 	.browse__google {
 		margin-right: 0px
 	}
+
+	
 }
 
 
